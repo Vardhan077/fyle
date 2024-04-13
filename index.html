@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel= "stylesheet" href = "./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+        <form  class="box" onsubmit="verify(event)">
+            <div class="a">
+                <label for="annualIncome" class="label">
+                    Enter gross annual income
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1712941132/question_i2bw32.png" class="q" />
+                </label>
+                <div class="input-container" id="input-container">
+                    <input type="text" placeholder="Enter gross annual income" onblur="looseFocus()" id="annualIncome" class="input" />
+                    <div id="tooltip" class="tooltip" style="visibility: hidden;">
+                        <p class="tooltipText" id = "tooltipText" style="visibility: hidden;">Please enter numbers only</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1713000668/problem_1_tqb3cj.png" class="icon" id="something" style="visibility: hidden;" />    
+                </div>
+            </div>
+            <div class="a">
+                <label for="extraIncome"  class="label">
+                    Enter extra income from other sources
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1712941132/question_i2bw32.png" />
+                </label>
+
+                <div class="input-container" id="input-container">
+                    <input type="text" placeholder="Enter gross annual income" onblur="looseFocus1()" id="extraIncome" class="input" />
+                    <div id="tooltip" class="tooltip" style="visibility: hidden;">
+                        <p class="tooltipText1" id = "tooltipText1" style="visibility: hidden;">Please enter numbers only</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1713000668/problem_1_tqb3cj.png" class="icon" id="something1" style="visibility: hidden;" />
+                </div>
+
+            </div>
+            <div class="a">
+                <label for="age"  class="label">
+                    Enter age group
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1712941132/question_i2bw32.png" />
+                </label>
+
+                <div class="input-container" id="input-container">
+                    <input type="number" placeholder="" onblur="looseFocus2()" id="age" class="input" />
+                    <div id="tooltip" class="tooltip" style="visibility: hidden;">
+                        <p class="tooltipText2" id = "tooltipText2" style="visibility: hidden;">Please enter numbers only</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1713000668/problem_1_tqb3cj.png" class="icon" id="something2" style="visibility: hidden;" />
+                </div>
+            </div>
+            <div class="a">
+                <label for="deductions"  class="label">
+                    Enter total applicable deductions
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1712941132/question_i2bw32.png" />
+                </label>
+                <div class="input-container" id="input-container">
+                    <input type="text" placeholder="Add total applicable deductions" onblur="looseFocus3()" id="deductions" class="input" />
+                    <div id="tooltip" class="tooltip" style="visibility: hidden;">
+                        <p class="tooltipText3" id = "tooltipText3" style="visibility: hidden;">Please enter numbers only</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/dg9itycrz/image/upload/v1713000668/problem_1_tqb3cj.png" class="icon" id="something3" style="visibility: hidden;" />
+                </div>
+
+            </div>
+            <div class="">
+                <input type="submit" value="Submit" class="input buttonInput">
+            </div>
+        
+        </form>
+        </div>
+        <div class="popup" id="popup">
+            <div class="inside">
+                <h1>Your overall income will be</h1>
+                <h3>12,00,00</h3>
+                <p>after tax deductions</p>
+                <button onclick="closePopup()">Close</button>
+            </div>    
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>

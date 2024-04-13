@@ -1,0 +1,218 @@
+.container{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    border: 1px solid black;
+    max-width:fit-content;
+    box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.2);
+    border: none;
+    height: 60vh;
+}
+.box{
+    margin: 50px;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.input{
+    height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+}
+
+.buttonInput{
+    height: 27px;
+    width: 310px; 
+    margin-top: 25px;
+    border: 0px ;
+    background-color: #6559f5;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.icon{
+    margin-top: 2px;
+    margin-right: 3px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* visibility:hidden; */
+
+}
+ 
+
+.input-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.q{
+    margin-top: 0px;
+    margin-left: 3px;
+}
+
+.tooltip{
+    position:absolute ;
+    width: 40px;
+    height: 10px;
+    background-color: #4c5d6b;
+    clip-path:polygon(50%,0,0 63%,0 0) ;
+
+}
+.tooltipText {
+    position: absolute;
+    /* right: 0%; */
+    bottom: 0%;
+    left: 0%;
+    transform: translateY();
+    white-space:nowrap;
+    /* margin-left: 50px; */
+    height: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #4c5d6b;
+    color: #fff;
+    clip-path:polygon(50%,0,0 63%,0 0) ;
+
+    z-index: 9999;
+}
+.tooltipText1  {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translateY();
+    white-space:nowrap;
+    height: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #4c5d6b;
+    color: #fff;
+    clip-path:polygon(50%,0,0 63%,0 0) ;
+    z-index: 9999;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #4c5d6b transparent transparent transparent;
+}
+
+.tooltip1::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #4c5d6b transparent transparent transparent;
+}
+
+
+.tooltipText2  {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translateY();
+    white-space:nowrap;
+    height: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #4c5d6b;
+    color: #fff;
+    clip-path:polygon(50%,0,0 63%,0 0) ;
+    z-index: 9999;
+}.tooltipText3  {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translateY();
+    white-space:nowrap;
+    height: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #4c5d6b;
+    color: #fff;
+    clip-path:polygon(50%,0,0 63%,0 0) ;
+    z-index: 9999;
+}
+
+
+
+
+.popup{
+    width: 500px;
+    height: 300px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align:center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition:transform 0.4s, top 0.4s ;
+}
+
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup {
+    width: 100;
+    margin-top: -50px;
+    /* border-radius: ; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.2);
+}
+
+.popup button{
+    width: 110px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6559f5;
+    color: #fff;
+    border:0;
+    outline:none;
+    font-size:18px;
+    border-radius: 4px;
+    cursor:pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.2);
+}
+
+.inside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
